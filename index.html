@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <title>Cullinan</title>
+</head>
+<style>
+    html, body { 
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid gray;
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    img.logo {
+        /* position: absolute; */
+        /* top: -50px; */
+        width: 300px;
+        height: auto;
+    }
+
+    div.menu {
+        font-size: 50px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    #menu-list {
+        visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        height: 75vh;
+    }
+    
+    section.main-section {
+        padding-top: 25vh;
+    }
+
+    div.about-section {
+        border: 1px solid gray;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    div.about-right-column {
+        width: 80%;
+        background-color: rgba(63,63,63,1);
+        margin-bottom: 10px;
+    }
+
+    div.about-right-column > h1 {
+        color: gold;
+    }
+
+    div.about-right-column > p {
+        color: white;
+    }
+
+    div.about-box {
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    div.about-box-center {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    div.about-box.top {
+        margin-bottom: 20px;
+    }
+    
+    div.about-box.center-left {
+        margin-right: 20px;
+    }
+    
+    div.about-box.center-right {
+        margin-left: 20px;
+    }
+    /*
+    div.about-box.top {
+        bottom: -50px;
+    } */
+</style>
+
+<body>
+    <header>
+        <img src="logo.png" class="logo" alt="logo" />
+        <ul id="menu-list">
+            <li>HOME</li>
+            <li>CREATOR</li>
+            <li>BRAND</li>
+            <li>NOTICE</li>
+            <li>CONTACT</li>
+        </ul>
+        <div onclick="menu_toggle()" class="menu">≡</div>
+    </header>
+    <section class="main-section">
+        고민중
+    </section>
+    <section>
+        <div class="about-section">
+            <div class="about-box top">
+                Collaboration
+            </div>
+
+            <div class="about-box-center">
+                <div class="about-box center-left">
+                    Cullinan_ent who?
+                </div>
+
+                <div class="about-box center-right">
+                    Cultivate Creators
+                </div>
+            </div>
+            <div class="about-box bottom">
+                Consulting
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="about-right-column">
+                <h1>Cullinan_ent who?</h1>
+                <p>
+                    asdaa
+                </p>
+            </div>
+            <div class="about-right-column">
+                <h1>Collaboration</h1>
+                <p>
+                    asdaa
+                </p>
+            </div>
+            <div class="about-right-column">
+                <h1>Cultivate Creators</h1>
+                <p>
+                    asdaa
+                </p>
+            </div>
+            <div class="about-right-column">
+                <h1>Consulting</h1>
+                <p>
+                    asdaa
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function menu_toggle() {
+            if (document.getElementById("menu-list").style.visibility == "visible")
+                document.getElementById("menu-list").style.visibility = "hidden";
+            else
+                document.getElementById("menu-list").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>
